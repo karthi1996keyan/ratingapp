@@ -56,7 +56,7 @@ function doPost(e) {
     // send email if to address is set
     if (sendEmailTo) {
       MailApp.sendEmail({
-        to:"karthirajakarthik.k@gmail.com",
+        to:"karthirajakarthik.k@gmail.com", //your mail address
         subject: "Contact form submitted",
         // replyTo: String(mailData.email), // This is optional and reliant on your form actually collecting a field named `email`
         htmlBody: formatMailBody(mailData, dataOrder)
